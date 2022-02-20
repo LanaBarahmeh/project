@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:drawableStart="@drawable/logo"
+        android:fontFamily="cursive"
+        android:text="The New View"
+        android:textColor="#4A0D0D"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="top|end"
+        android:layout_marginEnd="20dp"
+        android:text="Are you a receptionist?"
+        android:textColor="@color/black" />
+
+    <Button
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label1"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:onClick="logInMainPageOnClick"
+        android:layout_marginEnd="20dp"
+        android:text="login here"
+        android:textColor="@color/cardview_dark_background"
+        app:rippleColor="#2B0606" />
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView"-->
+    <!--        android:layout_width="50dp"-->
+    <!--        android:layout_height="92dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:layout_marginBottom="30dp"-->
+    <!--        app:srcCompat="@drawable/hotel"-->
+    <!--        tools:ignore="MissingConstraints"-->
+    <!--        tools:layout_editor_absoluteX="179dp"-->
+    <!--        tools:layout_editor_absoluteY="93dp" />-->
+
+    <ImageView
+        android:id="@+id/slideshow"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentEnd="false"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/anim_slideshow" />
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_date"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:background="#F8F8F8"-->
+    <!--        android:text="Select Date"-->
+    <!--        android:textSize="40sp"-->
+    <!--        tools:ignore="MissingConstraints"-->
+    <!--        tools:layout_editor_absoluteX="117dp"-->
+    <!--        tools:layout_editor_absoluteY="291dp" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp">
+
+
+        <TextView
+            android:id="@+id/inDate"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:hint="Check in"
+            android:textAlignment="center"
+            android:textColor="#4A0D0D"
+            android:textSize="20sp"
+            app:drawableStartCompat="@drawable/checkin"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="218dp" />
+
+        <TextView
+            android:id="@+id/outDate"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/inDate"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="start"
+            android:layout_marginStart="200dp"
+            android:layout_marginRight="63dp"
+            android:drawableStart="@drawable/checkout"
+            android:hint="Check out"
+            android:textColor="#4A0D0D"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="218dp" />
+
+
+        <Button
+            style="?attr/materialButtonOutlinedStyle"
+            android:id="@+id/searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/inDate"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp"
+            android:text="Search for available rooms"
+            android:onClick="searchForRoomsOnClick"
+            android:textColor="@color/cardview_dark_background"
+            app:rippleColor="#2B0606" />
+
+
+        <Button
+            style="?attr/materialButtonOutlinedStyle"
+            android:id="@+id/taxibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/searchBtn"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:onClick="getTaxtOnClick"
+            android:text="Get A TAXI To The New View"
+            android:textColor="@color/cardview_dark_background"
+            app:rippleColor="#2B0606"
+             />
+
+
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

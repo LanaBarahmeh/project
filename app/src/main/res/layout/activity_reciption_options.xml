@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="false"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/recbaackground"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    >
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:drawableStart="@drawable/logo"
+        android:fontFamily="cursive"
+        android:paddingStart="30dp"
+        android:text="The New View"
+        android:textColor="#4A0D0D"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <TextView
+        android:id="@+id/rectextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="Welcome Receptionist"
+        android:textColor="#3E0C0C"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/Button2"
+        android:layout_width="364dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/rectextView"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="270dp"
+        android:backgroundTint="#1BFFFFFF"
+        android:foreground="@drawable/capture3"
+        android:hint=" The Additions "
+        android:textColor="#320707"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        app:iconTint="#D04A0D0D"
+        app:rippleColor="#2B0606"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/Button3"
+        android:layout_width="364dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/Button1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="155dp"
+        android:foreground="@drawable/cap"
+        android:hint="Search For Rooms"
+        android:onClick="recSearchForRoomsOnClick"
+        android:textColor="#320707"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        app:iconSize="80dp"
+        app:iconTint="#D04A0D0D"
+        tools:ignore="UnknownId" />
+
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/dates"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/rectextView"-->
+    <!--        android:layout_alignParentLeft="true"-->
+    <!--        android:layout_toLeftOf="@+id/times" />-->
+
+    <!--    <Spinner-->
+    <!--        android:id="@id/times"-->
+    <!--        android:layout_width="96dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/rectextView"-->
+    <!--        android:layout_alignParentRight="true" />-->
+
+</RelativeLayout>

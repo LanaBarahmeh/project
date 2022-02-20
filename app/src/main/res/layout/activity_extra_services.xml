@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#75FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#7C1B14"
+                android:hint="Dry Clean"
+                android:onClick="dryCleanServicesOnClick"
+                android:textColorHint="#EFEAEA"
+                android:textSize="24sp"
+                app:icon="@drawable/dryclean"
+                app:iconGravity="textTop"
+                app:iconPadding="20dp"
+                app:iconSize="60dp"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#837C1B14"
+                android:hint="Kids Care"
+                android:textColorHint="#EFEAEA"
+                android:textSize="24sp"
+                app:icon="@drawable/children"
+                app:iconGravity="textTop"
+                android:onClick="childServiceOnClick"
+                app:iconPadding="20dp"
+                app:iconSize="60dp"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#DA7972"
+                android:textSize="24sp"
+                app:icon="@drawable/roomservice"
+                app:iconGravity="textTop"
+                app:iconPadding="20dp"
+                android:textColorHint="#EFEAEA"
+                android:onClick="roomServicesOnClick"
+                app:iconSize="60dp"
+                android:hint="Room Services"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Userinfo_rec"
+    android:background="@drawable/main"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="ScrollViewSize">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Please enter customer information to confirm booking"
+
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:background="@color/white"
+            android:padding="15dp">
+            <TextView
+                android:id="@+id/indate"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="-212dp"
+                android:hint="Check in"
+                android:textAlignment="center"
+                android:textColor="#4A0D0D"
+                android:textSize="20sp"
+                app:drawableStartCompat="@drawable/checkin" />
+            <TextView
+                android:id="@+id/outdate"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="215dp"
+                android:layout_marginRight="31dp"
+                android:drawableStart="@drawable/checkout"
+                android:hint="Check out"
+                android:textColor="#4A0D0D"
+                android:textSize="20dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/ic_prof"
+                android:layout_width="40dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/ic_profile">
+            </ImageView>
+            <EditText
+                android:id="@+id/textviewfullnamerec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="50dp"
+                android:hint="First Name"
+                android:textSize="18sp">
+
+            </EditText>
+
+            <ImageView
+                android:id="@+id/ic_email"
+                android:layout_width="40dp"
+                android:layout_height="42dp"
+                android:layout_below="@+id/ic_lastname"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ic_email">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/textview_emailrec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lastnamerec"
+                android:layout_alignStart="@+id/ic_email"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="30dp"
+                android:hint="Email"
+                android:textSize="18sp">
+
+            </EditText>
+
+            <ImageView
+                android:id="@+id/ic_lastname"
+                android:layout_width="40dp"
+                android:layout_height="42dp"
+                android:layout_below="@+id/ic_prof"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ic_profile">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/lastnamerec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textviewfullnamerec"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="30dp"
+                android:hint="Last Name" />
+
+
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/book2"
+            android:text="Book"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:onClick="bookreconclick"
+            android:background="@color/cardview_shadow_start_color"
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

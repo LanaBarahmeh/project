@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ReserveRoom"
+    android:background="@drawable/recbaackground">
+
+    <ImageView
+        android:id="@+id/slideshow"
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentEnd="false"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/anim_slideshow" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slideshow"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="40sp" />
+
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/text"
+            android:layout_marginTop="20dp"
+            android:gravity="center" />
+
+    <Button
+        android:id="@+id/reservebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_marginLeft="140dp"
+        android:onClick="reserveRoomOnClick"
+        android:text="@string/reserve"
+        android:textFontWeight="1"
+        android:textSize="20sp" />
+</RelativeLayout>

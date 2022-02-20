@@ -1,0 +1,236 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".Dryclean">-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+layout_height="wrap_content"
+layout_width="wrap_content"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#FFFFFF"
+android:orientation="vertical"
+tools:context=".Dryclean">
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+     <!--   <ImageView
+            android:id="@+id/wave_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/drymain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" /> -->
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+
+            android:clickable="true"
+            android:elevation="9dp"
+            android:focusable="true"
+            android:gravity="left"
+            android:background="@drawable/custom"
+
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.566"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TextView
+                android:id="@+id/txt11"
+                android:layout_width="256dp"
+                android:layout_height="40dp"
+
+                android:layout_marginLeft="155dp"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:paddingTop="5dp"
+                android:text="Ironing clothes"
+                android:textSize="25dp" />
+            <!--       android:layout_alignLeft="@id/img1" -->
+                   <TextView
+                       android:id="@+id/txt12"
+                       android:layout_width="256dp"
+                       android:layout_height="45dp"
+                       android:layout_below="@id/txt11"
+
+                       android:layout_marginLeft="155dp"
+                       android:layout_weight="1"
+                       android:paddingLeft="3dp"
+                       android:paddingTop="5dp"
+                       android:text="Stylish clothes,excellent quality and great service "
+                       android:textSize="15dp" />
+                 <!--  android:layout_alignLeft="@id/img1" -->
+            <TextView
+                android:id="@+id/txt13"
+                android:layout_width="256dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/txt12"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:text="5$"
+                android:textSize="17dp" />
+               <!--  android:layout_alignLeft="@id/img1" -->
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="149dp"
+                android:layout_height="137dp"
+                android:layout_marginStart="3dp"
+                app:srcCompat="@drawable/dawood4" />
+
+                   <CheckBox
+                       android:id="@+id/firstcheck"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/txt12"
+                       android:layout_marginStart="158dp"
+                       android:layout_marginTop="15dp"
+                       android:clickable="true"
+                       android:focusable="false"
+                       tools:layout_editor_absoluteX="157dp"
+                       tools:layout_editor_absoluteY="485dp" />
+               </RelativeLayout>
+
+
+               <RelativeLayout
+                   android:id="@+id/rel3"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="8dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginEnd="8dp"
+                   android:clickable="true"
+                   android:elevation="5dp"
+                   android:focusable="true"
+                   android:gravity="left"
+                   android:background="@drawable/custom"
+                   android:orientation="horizontal"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintVertical_bias="0.566"
+                   tools:ignore="MissingConstraints"
+
+                   tools:layout_editor_absoluteX="0dp">
+
+                   <TextView
+                       android:id="@+id/txt33"
+                       android:layout_width="256dp"
+                       android:layout_height="40dp"
+
+                       android:layout_marginLeft="155dp"
+                       android:layout_weight="1"
+                       android:paddingLeft="3dp"
+                       android:paddingTop="5dp"
+                       android:text="Washing clothes"
+                       android:textSize="25dp" />
+             <!--      android:layout_alignLeft="@id/img2" -->
+            <TextView
+                android:id="@+id/txt21"
+                android:layout_width="256dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/txt33"
+                android:layout_marginLeft="155dp"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:paddingTop="5dp"
+                android:text="Clean clothes and high quality service daily "
+                android:textSize="15dp" />
+            <!--   android:layout_alignLeft="@id/img2" -->
+
+
+           <TextView
+               android:id="@+id/txt23"
+               android:layout_width="256dp"
+               android:layout_height="30dp"
+               android:layout_below="@id/txt21"
+
+               android:layout_marginLeft="190dp"
+               android:layout_marginTop="19dp"
+               android:layout_weight="1"
+               android:paddingLeft="3dp"
+               android:text="10$"
+               android:textSize="17dp" />
+           <!--      android:layout_alignLeft="@id/img2" -->
+                   <ImageView
+                       android:id="@+id/img2"
+                       android:layout_width="149dp"
+                       android:layout_height="137dp"
+                       android:layout_marginStart="3dp"
+                       app:srcCompat="@drawable/dawood1" />
+
+           <CheckBox
+               android:id="@+id/secondcheck"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/txt21"
+               android:layout_marginStart="158dp"
+               android:layout_marginTop="6dp"
+               android:clickable="true"
+               android:focusable="false"
+               tools:layout_editor_absoluteX="157dp"
+               tools:layout_editor_absoluteY="485dp" />
+       </RelativeLayout>
+
+       <Button
+           android:id="@+id/applybutton"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="10dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginEnd="10dp"
+           android:layout_marginBottom="10dp"
+           android:text="ِApply"
+           android:onClick="applyonclick"
+           />
+
+   </LinearLayout>
+</ScrollView>
+
+<TextView
+   android:id="@+id/textView"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="Lets have some fun :) "
+   tools:ignore="MissingConstraints"
+   tools:layout_editor_absoluteX="67dp"
+   tools:layout_editor_absoluteY="40dp" />
+
+<!--    </ScrollView>-->
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
